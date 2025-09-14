@@ -1,8 +1,8 @@
-import {defineConfig} from 'vite';
-import {ViteEjsPlugin} from 'vite-plugin-ejs';
-import {fileURLToPath} from 'node:url';
+import { defineConfig } from 'vite';
+import { ViteEjsPlugin } from 'vite-plugin-ejs';
+import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import {glob} from 'glob';
+import { glob } from 'glob';
 
 import liveReload from 'vite-plugin-live-reload';
 
@@ -25,7 +25,7 @@ function moveOutputPlugin() {
 export default defineConfig({
   // base 的寫法:
   // base: '/Repository 的名稱/'
-  base: '/goudonshop0914/',
+  base: '/web-layout-training-vite/',
   plugins: [
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
     ViteEjsPlugin(),
